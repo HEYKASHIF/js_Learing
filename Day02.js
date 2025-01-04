@@ -16,3 +16,34 @@
 //equirements:
 //Use a function expression. Ensure the function handles cases where the user cancels or leaves the input empty.
 
+
+// function userName()
+// {
+//     let name = prompt('PLease, Enter your name : ');
+//     if(name=='' || name==null){
+//         return 'Guest';
+//     }
+//     else
+//     {
+//         return name;
+//     }
+  
+    
+// }
+
+// function greetUser(name)
+// {
+//     console.log(`Hello ${name}`);
+// }
+
+// let user = userName();
+// greetUser(user);
+
+
+//You are developing a task management system that tracks pending tasks for the day. Create an array with five tasks. 
+// Implement the following operations without using specific method references:
+
+// 1- Remove the first task from the list.
+// 2- Add two new high-priority tasks to the beginning of the list.
+// 3- Replace the last task in the list with a new task.
+// 4- Log the updated task list after all operations.
