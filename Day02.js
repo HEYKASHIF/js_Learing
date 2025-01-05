@@ -101,6 +101,60 @@
 
 // If generatePassword(10, true, true) is called, it might return a password like "Ab1@deF2Gh".
 
+// function generatePassword(len, includeNumbers, includeSpecialChars) {
+//   let password = "";
+//   let i = 0;
+//   while (i < len) {
+//     console.log(i);
 
+//     if (i < len) {
+//       password = password + "O";
+//       i = password.length;
+//     }
+//     if (includeNumbers && i < len) {
+//       password = password + 9;
+//       i = password.length;
+//     }
+//     if (i < len) {
+//       password = password + "k";
+//       i = password.length;
+//     }
+//     if (i < len) {
+//       password = password + "W";
+//       i = password.length;
+//     }
+//     if (includeSpecialChars && i < len) {
+//       password = password + "&";
+//       i = password.length;
+//     }
+//     if (i < len) {
+//       password = password + "m";
+//       i = password.length;
+//     }
+//     if (i < len) {
+//       password = password + "s";
+//       i = password.length;
+//     }
+//     if (i < len) {
+//       password = password + "z";
+//       i = password.length;
+//     }
+//   }
 
+//   return password;
+// }
 
+// let iN = true;
+// let iSC = false;
+
+// let l = +prompt(
+//   "Enter the length of the password : [length should be greater than 7] "
+// );
+// iN = prompt("Do you want numbers in your password? enter True or False : ");
+// iSC = prompt(
+//   "Do you want special characters in your password? enter True or False : "
+// );
+
+// let pass = generatePassword(l, iN, iSC);
+
+// console.log(pass);

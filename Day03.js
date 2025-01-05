@@ -9,22 +9,22 @@
 
 // Use default parameters for the discount. Validate both inputs to ensure they are positive numbers.
 
-function calculatePrice() {
-  let price = +prompt("please, enter the price :");
-  let discout = +prompt("please, enter discout too :");
+// function calculatePrice() {
+//   let price = +prompt("please, enter the price :");
+//   let discout = +prompt("please, enter discout too :");
 
-  if (price < 0 || typeof price != typeof 1) {
-    price = +prompt("ERROR, price type again :");
-  } else if (discout < 0 || typeof discout != typeof 1) {
-    discout = +prompt("ERROR, discount type again :");
-  }
+//   if (price < 0 || typeof price != typeof 1) {
+//     price = +prompt("ERROR, price type again :");
+//   } else if (discout < 0 || typeof discout != typeof 1) {
+//     discout = +prompt("ERROR, discount type again :");
+//   }
 
-  if (discout == null || discout == "") {
-    discout = 10;
-  }
+//   if (discout == null || discout == "") {
+//     discout = 10;
+//   }
 
-  let finalPrice = (discout / 100) * price;
-  return finalPrice;
-}
+//   let finalPrice = (discout / 100) * price;
+//   return finalPrice;
+// }
 
-console.log(calculatePrice());
+// console.log(calculatePrice());
