@@ -49,11 +49,29 @@
 
 // 5 6
 
-let arr = [[1,2],[3,4],[5,6]];
-let M = 3;
-let N = 2;
+// let arr = [[1,2],[3,4],[5,6]];
+// let M = 3;
+// let N = 2;
 
-for(let i=0; i<M; i++)
-{
-    console.log(arr[i]);
-}
+// for(let i=0; i<M; i++)
+// {
+//     console.log(arr[i]);
+// }
+
+// let obj = {
+//     firstName : 'Akhil',
+//     lastName : 'singhania',
+//     hobby : 'reading'
+// }
+
+// for(let heys in obj)
+// {
+//     console.log(`${heys} : ${obj[heys]}`);
+// }
+
+// console.log(y);
+// var y=10;
+
+// let greeting = 'hello';
+// greeting = 'hyy';
+// console.log(greeting);

@@ -11,3 +11,11 @@
 // console.log(arr);
 // arr.pop()
 // console.log(arr);
+
+// const obj = {key: 'value'};
+
+// obj = {key: 'points'}
+
+// // obj.key = 'new value';
+
+// console.log(obj);
