@@ -19,3 +19,18 @@
 // // obj.key = 'new value';
 
 // console.log(obj);
+
+
+// let a=10;
+// let b=20;
+
+// let calculator ={
+//     a:1,
+//     b:2,
+//     add : function()
+//     {
+//         console.log(this.a+this.b);
+//     }
+// }
+
+// console.log(calculator.add())
