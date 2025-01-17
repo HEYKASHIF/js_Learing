@@ -35,3 +35,4 @@
 
 // console.log(calculator.add())
 
+console.log(36%36);
