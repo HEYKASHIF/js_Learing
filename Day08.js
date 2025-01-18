@@ -14,20 +14,20 @@
 //     console.log(`${item} : ${book[item]}`);
 // }
 
-let arr = ['A','B','C','D','E','F'];
-let N = arr.length;
+// let arr = ['A','B','C','D','E','F'];
+// let N = arr.length;
 
-let newarr = [];
-for(let i=0; i<N; i++)
-    { 
+// let newarr = [];
+// for(let i=0; i<N; i++)
+//     { 
       
-      if(i%2==0)
-      {
-        // let temp =0;
-        newarr[i] = arr[i+1];
-        newarr[i+1] = arr[i];
-      }
-    }
+//       if(i%2==0)
+//       {
+//         // let temp =0;
+//         newarr[i] = arr[i+1];
+//         newarr[i+1] = arr[i];
+//       }
+//     }
     
-    console.log(newarr);
+//     console.log(newarr);
       //write code here
