@@ -142,3 +142,56 @@
 //   }
 //   console.log(row);
 // }
+
+
+// Problem Statement: Given amatrixwith N rows and M columns. Print the matrix elements starting from the top right corner and follow a zig-zag pattern.
+
+// Look at the image for better understanding
+
+// [
+//   [1,2,3,4,5],
+//   [6,7,8,9,1],
+//   [3,2,5,4,6],
+//   [7,8,9,1,2]
+// ]
+
+
+// For example, for the above matrix, the required output would be as shown below.
+
+// 5 4 3 2 1 6 7 8 9 1 6 4 5 2 3 7 8 9 1 2.
+
+
+let arr = [
+  [1,2,3,4,5],
+  [6,7,8,9,1],
+  [3,2,5,4,6],
+  [7,8,9,1,2]
+];
+
+let N = arr.length;
+
+let M = arr[0].length;
+
+let rowFinal = '';
+
+for(let i=0; i<N; i++)
+{
+  if(i%2==0)
+  {
+    for(j=M-1; j>=0; j--)
+    {
+      rowFinal = rowFinal+arr[i][j]+' ';
+
+    }
+  }
+  else
+  {
+    for(j=0; j<M; j++)
+    {
+      rowFinal = rowFinal+arr[i][j]+' ';
+    }
+  }
+}
+
+console.log(rowFinal);
+
