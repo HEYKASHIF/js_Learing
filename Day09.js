@@ -161,37 +161,79 @@
 // 5 4 3 2 1 6 7 8 9 1 6 4 5 2 3 7 8 9 1 2.
 
 
-let arr = [
-  [1,2,3,4,5],
-  [6,7,8,9,1],
-  [3,2,5,4,6],
-  [7,8,9,1,2]
-];
+// let arr = [
+//   [1,2,3,4,5],
+//   [6,7,8,9,1],
+//   [3,2,5,4,6],
+//   [7,8,9,1,2]
+// ];
 
-let N = arr.length;
+// let N = arr.length;
 
-let M = arr[0].length;
+// let M = arr[0].length;
 
-let rowFinal = '';
+// let rowFinal = '';
 
-for(let i=0; i<N; i++)
-{
-  if(i%2==0)
-  {
-    for(j=M-1; j>=0; j--)
-    {
-      rowFinal = rowFinal+arr[i][j]+' ';
+// for(let i=0; i<N; i++)
+// {
+//   if(i%2==0)
+//   {
+//     for(j=M-1; j>=0; j--)
+//     {
+//       rowFinal = rowFinal+arr[i][j]+' ';
 
-    }
-  }
-  else
-  {
-    for(j=0; j<M; j++)
-    {
-      rowFinal = rowFinal+arr[i][j]+' ';
-    }
-  }
-}
+//     }
+//   }
+//   else
+//   {
+//     for(j=0; j<M; j++)
+//     {
+//       rowFinal = rowFinal+arr[i][j]+' ';
+//     }
+//   }
+// }
 
-console.log(rowFinal);
+// console.log(rowFinal);
 
+
+
+// function reverseEvens(N,A){
+  
+//   let count = 0;
+//   let even = '';
+//   for(let i=N-1; i>=0; i--)
+//   {
+//     if(A[i]%2==0)
+//     {
+//       even = even + A[i] +' ';
+//       count++;
+//     }
+    
+//   }
+  
+//   console.log(count);
+//   console.log(even);
+//     //write code here
+// }
+
+
+
+// function reverseOdds(N, A){
+  
+  
+//   let count = 0;
+//   let odd = '';
+//   for(let i=N-1; i>=0; i--)
+//   {
+//     if(A[i]%2!=0)
+//     {
+//       odd = odd + A[i] +' ';
+//       count++;
+//     }
+    
+//   }
+  
+//   console.log(count);
+//   console.log(odd);
+//     //write code here
+// }
