@@ -36,5 +36,5 @@
 // console.log(calculator.add())
 
 // console.log(36%36);
-let str = 'AmanZ';
-console.log(str.charCodeAt(4));
+// let str = 'AmanZ';
+// console.log(str.charCodeAt(4));
