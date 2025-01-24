@@ -21,5 +21,20 @@
 // if (num3 > num1 && num3 > num2) print("true");
 // else print("false");
 
+// Problem Description
+// Write the pseudocode for the following:
 
+// You are provided with the radii of two circles. 
+// For the first circle, the radius is R1, and for the second circle, 
+// the radius is R2. You need to determine if the area of the first circle is greater than the second, 
+// and if the circumference of the first circle is greater than the second.
 
+// Input Format:
+// The first line of input contains two space-separated integers 
+// representing the radii of two circles: R1 and R2.
+
+// Output Format:
+// On the first line, print "true" if the area of circle 1 is 
+// greater than the area of circle 2; otherwise, print "false". 
+// On the second line, print "true" if the circumference of circle 1 is greater 
+// than the circumference of circle 2; otherwise, print "false".
