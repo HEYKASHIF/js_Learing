@@ -38,3 +38,24 @@
 // greater than the area of circle 2; otherwise, print "false". 
 // On the second line, print "true" if the circumference of circle 1 is greater 
 // than the circumference of circle 2; otherwise, print "false".
+
+
+
+
+let arr = [3,5,2,7,10,9];
+
+let n = arr.length; 
+
+let temp1 = arr[0];
+let temp2 = arr[n-1];
+let res = 0;
+
+for(let i=0; i<n; i++)
+{   
+    if(temp1<arr[i] && arr[i]<temp2) // 3<3<9
+    {
+        res = arr[i];
+    }
+}
+
+console.log(res);
