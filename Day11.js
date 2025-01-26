@@ -42,20 +42,60 @@
 
 
 
-let arr = [3,5,2,7,10,9];
+// let arr = [3,5,2,7,10,9];
 
-let n = arr.length; 
+// let n = arr.length; 
 
-let temp1 = arr[0];
-let temp2 = arr[n-1];
-let res = 0;
+// let temp1 = arr[0];
+// let temp2 = arr[n-1];
+// let res = 0;
 
-for(let i=0; i<n; i++)
-{   
-    if(temp1<arr[i] && arr[i]<temp2) // 3<3<9
-    {
-        res = arr[i];
-    }
+// for(let i=0; i<n; i++)
+// {   
+//     if(temp1<arr[i] && arr[i]<temp2) // 3<3<9
+//     {
+//         res = arr[i];
+//     }
+// }
+
+// console.log(res);
+
+
+// Problem Description
+// Write the pseudocode for the following:
+
+// You are provided with the radii of two circles. 
+// For the first circle, the radius is R1, and for the second circle, 
+// the radius is R2. You need to determine if the area of the first circle 
+// is greater than the second, and if the circumference of the first circle is greater 
+// than the second.
+
+// Input Format:
+// The first line of input contains two space-separated 
+// integers representing the radii of two circles: R1 and R2.
+
+// Output Format:
+// On the first line, print "true" if the area of circle 1 is greater
+// than the area of circle 2; otherwise, print "false". On the second line, 
+// print "true" if the circumference of circle 1 is greater than the circumference of circle 2; otherwise, print "false".
+
+let R1 = 3;
+let R2 = 4;
+
+if(3.14*R1*R2 > 3.14*R2*R2)
+{
+    console.log('true');
+}
+else
+{
+    console.log('false');
 }
 
-console.log(res);
+if(2*3.14*R1 > 2*3.14*R2)
+{
+    console.log('true');
+}
+else
+{
+    console.log('false');
+}
