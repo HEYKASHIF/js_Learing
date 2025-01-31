@@ -151,3 +151,30 @@
 //   console.log("*");
 // }
 // fun(6);
+
+
+//Z Pattern!
+
+let N = 10
+let row1 = '';
+  for(let i=1; i<=N; i++)
+  {
+    row1 = row1+'*';
+  }
+  console.log(row1);
+  
+  
+  
+  for(let i=1; i<=(N-2); i++)
+  {
+    let row2 = '';
+    for(let j=1; j<=((N-i)-1); j++)
+    {
+      row2 = row2+' ';
+    }
+    row2 = row2+'*';
+    console.log(row2);
+  }
+  
+  
+  console.log(row1);
