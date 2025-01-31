@@ -138,16 +138,16 @@
     *
     * * * * *
  */
-let n = 5;
-function fun(n) {
-  let row = "";
-  for (let i = 1; i < n; i++) {
-    row = row + "*" + " ";
-  }
-  console.log(row);
-}
+// let n = 5;
+// function fun(n) {
+//   let row = "";
+//   for (let i = 1; i < n; i++) {
+//     row = row + "*" + " ";
+//   }
+//   console.log(row);
+// }
 
-for (let i = 1; i < n; i++) {
-  console.log("*");
-}
-fun(6);
+// for (let i = 1; i < n; i++) {
+//   console.log("*");
+// }
+// fun(6);
