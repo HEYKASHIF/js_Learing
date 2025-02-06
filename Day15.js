@@ -46,6 +46,7 @@
 
 
 
+//Alan & Christopher problem!
 let S = 'a#bc';
 
 let empty = '';
@@ -61,3 +62,38 @@ for(let i=0; i<S.length; i++)
     }
 }
 console.log(empty);
+
+
+
+//Encryption of a given string!
+//S is given string, K is no. of rotaions.!
+function encryptIt(S,K) {
+  
+    //(ascii-(48)/(65)/(97)+K)%(26)/(10)+(48)/(65)/(97)
+    let newStr = '';
+    for(let i=0; i<S.length; i++)
+    { 
+      let ascii = S.charCodeAt(i);
+      if(48<=ascii && ascii<=57)
+      {
+        newStr = newStr + String.fromCharCode(((ascii-48+K)%10)+(48));
+      }
+      else if(65<=ascii && ascii<=90)
+      {
+        newStr = newStr + String.fromCharCode(((ascii-65+K)%26)+(65));
+      }
+      else if(97<=ascii && ascii<=122)
+      {
+        newStr = newStr + String.fromCharCode(((ascii-97+K)%26)+(97));
+      }
+      else
+      {
+        newStr = newStr + S[i];
+      }
+    }
+    
+    console.log(newStr);
+      // write code here
+      
+  }
+  
