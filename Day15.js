@@ -65,17 +65,44 @@
 
 
 //DeCompress The String!
-let str = 'a2b3';
-let nstr = '';
-  for(let i=1; i<str.length; i+=2)
-  {
-    for(let j=1; j<=str[i]; j++)
-    {
-      nstr+=str[i-1];
-    }
+// let str = 'a2b3';
+// let nstr = '';
+//   for(let i=1; i<str.length; i+=2)
+//   {
+//     for(let j=1; j<=str[i]; j++)
+//     {
+//       nstr+=str[i-1];
+//     }
     
-  }
-  console.log(nstr);
+//   }
+//   console.log(nstr);
+
+
+let arr = [16,17,4,3,5,2,3];
+let n = arr.length;
+
+let narr = [];
+
+for(let i=0; i<n-1; i++)
+{
+    let flag = true;
+    for(let j=i+1; j<n; j++)
+    {
+        if(arr[i]<arr[j])
+        {
+            flag = false;
+            break;
+        }
+    }
+    if(flag)
+    {
+        narr.push(arr[i]);
+    }
+}
+
+narr.push(arr[n-1]);
+console.log(narr);
+
 
 
 
