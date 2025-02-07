@@ -78,47 +78,30 @@
 //   console.log(nstr);
 
 
-let arr = [16,17,4,3,5,2,3];
-let n = arr.length;
+// let arr = [16,17,4,3,5,2,3];
+// let n = arr.length;
 
-let narr = [];
+// let narr = [];
 
-for(let i=0; i<n-1; i++)
-{
-    let flag = true;
-    for(let j=i+1; j<n; j++)
-    {
-        if(arr[i]<arr[j])
-        {
-            flag = false;
-            break;
-        }
-    }
-    if(flag)
-    {
-        narr.push(arr[i]);
-    }
-}
+// for(let i=0; i<n-1; i++)
+// {
+//     let flag = true;
+//     for(let j=i+1; j<n; j++)
+//     {
+//         if(arr[i]<arr[j])
+//         {
+//             flag = false;
+//             break;
+//         }
+//     }
+//     if(flag)
+//     {
+//         narr.push(arr[i]);
+//     }
+// }
 
-narr.push(arr[n-1]);
-console.log(narr);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// narr.push(arr[n-1]);
+// console.log(narr);
 
 
 
@@ -154,4 +137,58 @@ console.log(narr);
 //       // write code here
       
 //   }
+
+
+
+//New York Skylines(find score array)!
+let arr = [1,4,3,2,7];
+let n = arr.length;
+function newYorkSkylines(n, arr) {
+  
+    let sArr = [];
+    for(let i=0; i<n; i++)
+    {
+      let count = 0;
+      if(i==0)
+      {
+        if(arr[i]>arr[i+1])
+        {
+          count++;
+        }
+        
+      }
+      else if(i==n-1)
+      {
+        if(arr[i]>arr[i-1])
+        {
+          count++;
+        }
+        
+        
+      }
+      else
+      {
+        if(arr[i]>arr[i-1])
+        {
+          count++;
+        }
+        if(arr[i]>arr[i+1])
+        {
+          count++;
+        }
+      }
+      
+      
+      
+      sArr.push(count);
+    }
+    
+    console.log(sArr.join(' '));
+      // write your code here
+  }
+
+ newYorkSkylines(n, arr);
+
+
+
   
