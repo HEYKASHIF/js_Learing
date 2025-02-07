@@ -47,53 +47,84 @@
 
 
 //Alan & Christopher problem!
-let S = 'a#bc';
+// let S = 'a#bc';
 
-let empty = '';
-for(let i=0; i<S.length; i++)
-{
-    if(S[i+1]=='#' || S[i]=='#')
+// let empty = '';
+// for(let i=0; i<S.length; i++)
+// {
+//     if(S[i+1]=='#' || S[i]=='#')
+//     {
+//         continue;
+//     }
+//     else
+//     {
+//         empty+=S[i];
+//     }
+// }
+// console.log(empty);
+
+
+//DeCompress The String!
+let str = 'a2b3';
+let nstr = '';
+  for(let i=1; i<str.length; i+=2)
+  {
+    for(let j=1; j<=str[i]; j++)
     {
-        continue;
+      nstr+=str[i-1];
     }
-    else
-    {
-        empty+=S[i];
-    }
-}
-console.log(empty);
+    
+  }
+  console.log(nstr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 //Encryption of a given string!
 //S is given string, K is no. of rotaions.!
-function encryptIt(S,K) {
+// function encryptIt(S,K) {
   
-    //(ascii-(48)/(65)/(97)+K)%(26)/(10)+(48)/(65)/(97)
-    let newStr = '';
-    for(let i=0; i<S.length; i++)
-    { 
-      let ascii = S.charCodeAt(i);
-      if(48<=ascii && ascii<=57)
-      {
-        newStr = newStr + String.fromCharCode(((ascii-48+K)%10)+(48));
-      }
-      else if(65<=ascii && ascii<=90)
-      {
-        newStr = newStr + String.fromCharCode(((ascii-65+K)%26)+(65));
-      }
-      else if(97<=ascii && ascii<=122)
-      {
-        newStr = newStr + String.fromCharCode(((ascii-97+K)%26)+(97));
-      }
-      else
-      {
-        newStr = newStr + S[i];
-      }
-    }
+//     //(ascii-(48)/(65)/(97)+K)%(26)/(10)+(48)/(65)/(97)
+//     let newStr = '';
+//     for(let i=0; i<S.length; i++)
+//     { 
+//       let ascii = S.charCodeAt(i);
+//       if(48<=ascii && ascii<=57)
+//       {
+//         newStr = newStr + String.fromCharCode(((ascii-48+K)%10)+(48));
+//       }
+//       else if(65<=ascii && ascii<=90)
+//       {
+//         newStr = newStr + String.fromCharCode(((ascii-65+K)%26)+(65));
+//       }
+//       else if(97<=ascii && ascii<=122)
+//       {
+//         newStr = newStr + String.fromCharCode(((ascii-97+K)%26)+(97));
+//       }
+//       else
+//       {
+//         newStr = newStr + S[i];
+//       }
+//     }
     
-    console.log(newStr);
-      // write code here
+//     console.log(newStr);
+//       // write code here
       
-  }
+//   }
   
