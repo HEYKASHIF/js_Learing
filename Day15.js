@@ -64,6 +64,7 @@
 // console.log(empty);
 
 
+
 //DeCompress The String!
 // let str = 'a2b3';
 // let nstr = '';
@@ -78,11 +79,11 @@
 //   console.log(nstr);
 
 
+
+
 // let arr = [16,17,4,3,5,2,3];
 // let n = arr.length;
-
 // let narr = [];
-
 // for(let i=0; i<n-1; i++)
 // {
 //     let flag = true;
@@ -140,54 +141,54 @@
 
 
 
-//New York Skylines(find score array)!
-let arr = [1,4,3,2,7];
-let n = arr.length;
-function newYorkSkylines(n, arr) {
+// //New York Skylines(find score array)!
+// let arr = [1,4,3,2,7];
+// let n = arr.length;
+// function newYorkSkylines(n, arr) {
   
-    let sArr = [];
-    for(let i=0; i<n; i++)
-    {
-      let count = 0;
-      if(i==0)
-      {
-        if(arr[i]>arr[i+1])
-        {
-          count++;
-        }
+//     let sArr = [];
+//     for(let i=0; i<n; i++)
+//     {
+//       let count = 0;
+//       if(i==0)
+//       {
+//         if(arr[i]>arr[i+1])
+//         {
+//           count++;
+//         }
         
-      }
-      else if(i==n-1)
-      {
-        if(arr[i]>arr[i-1])
-        {
-          count++;
-        }
+//       }
+//       else if(i==n-1)
+//       {
+//         if(arr[i]>arr[i-1])
+//         {
+//           count++;
+//         }
         
         
-      }
-      else
-      {
-        if(arr[i]>arr[i-1])
-        {
-          count++;
-        }
-        if(arr[i]>arr[i+1])
-        {
-          count++;
-        }
-      }
+//       }
+//       else
+//       {
+//         if(arr[i]>arr[i-1])
+//         {
+//           count++;
+//         }
+//         if(arr[i]>arr[i+1])
+//         {
+//           count++;
+//         }
+//       }
       
       
       
-      sArr.push(count);
-    }
+//       sArr.push(count);
+//     }
     
-    console.log(sArr.join(' '));
-      // write your code here
-  }
+//     console.log(sArr.join(' '));
+//       // write your code here
+//   }
 
- newYorkSkylines(n, arr);
+//  newYorkSkylines(n, arr);
 
 
 
