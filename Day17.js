@@ -134,3 +134,45 @@
 //       //write code here
     
 //   }
+
+
+
+
+
+//Swastik & Sum!
+function solve(n,m,matrix){
+  
+    let sum1 = 0;
+    for(let i=0; i<=(n-1)/2; i++)
+    {
+      sum1+=matrix[i][0];
+    }
+    for(let j=1; j<=(m-2); j++)
+    {
+      sum1+=matrix[(n-1)/2][j];
+    }
+    for(let i=(n-1)/2; i<=(n-1); i++)
+    {
+      sum1+=matrix[i][m-1];
+    }
+    // console.log(sum1);
+    
+    let sum2 = 0;
+    for(let j=(m-1); j>=((m-1)/2)+1; j--)
+    {
+      sum2+=matrix[0][j];
+    }
+    for(let i=0; i<=(n-1); i++)
+    {
+      sum2+=matrix[i][(m-1)/2];
+    }
+    for(let j=((m-1)/2)-1; j>=0; j--)
+    {
+      sum2+=matrix[n-1][j];
+    }
+    // console.log(sum2);
+    
+    console.log(Math.abs(sum1-sum2));
+    
+      
+  }
