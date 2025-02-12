@@ -20,7 +20,6 @@
 
 // let obj = freq([1,1,1,1,1,2,2,2,2])
 
-
 // let frequency = 0;
 // let element =0;
 // for(let key in obj)
@@ -33,6 +32,10 @@
     
 // }
 // console.log(frequency, element);
+
+
+
+
 
 
 
@@ -73,13 +76,15 @@
 //   console.log(res);
 
 
+
+
+
+
 //The Midlle Element!
 // let arr = [1,4,4,5,3,6,7,8,9];
 // let N = arr.length;
 // console.log(N);
-
 // function elementInMiddle(N,arr){
-  
   
 //   for(let i=1; i<N-1; i++)
 //   {
@@ -115,47 +120,53 @@
 // elementInMiddle(N,arr);
 
 
-//Summer Internship!
-let bills = [5,5,5,10,20];
-let n = people.length;
 
-function solve(n,bills) {
+
+
+
+//Summer Internship!
+// let bills = [5,5,5,10,20];
+// let n = people.length;
+
+// function solve(n,bills) {
   
-    let count5 = 0;
-    let count10 = 0;
-    for(let i=0; i<n; i++)
-    {
-      if(bills[i]==5)
-      {
-        count5+=5;
-      }
-      else if(bills[i]==10 && count5>0)
-      {
-        count5-=5;
-        count10+=10;
-      }
-      else if(bills[i]==20 && count5+count10>=15)
-      {
-        if(count10>=10 && count5>=5)
-        {
-          count10-=10;
-          count5-=5;
-        }
-        else if(count5>=15)
-        {
-          count5-=15;
-        }
-        else
-        {
-          console.log('NO');
-          return;
-        }
-      }
-      else
-      {
-        console.log('NO');
-        return;
-      }
-    }
-    console.log('YES');
-}
+//     let count5 = 0;
+//     let count10 = 0;
+//     for(let i=0; i<n; i++)
+//     {
+//       if(bills[i]==5)
+//       {
+//         count5+=5;
+//       }
+//       else if(bills[i]==10 && count5>0)
+//       {
+//         count5-=5;
+//         count10+=10;
+//       }
+//       else if(bills[i]==20 && count5+count10>=15)
+//       {
+//         if(count10>=10 && count5>=5)
+//         {
+//           count10-=10;
+//           count5-=5;
+//         }
+//         else if(count5>=15)
+//         {
+//           count5-=15;
+//         }
+//         else
+//         {
+//           console.log('NO');
+//           return;
+//         }
+//       }
+//       else
+//       {
+//         console.log('NO');
+//         return;
+//       }
+//     }
+//     console.log('YES');
+// }
+
+
