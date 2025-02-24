@@ -25,6 +25,7 @@
 
 
 
+
 //Bubble sort!
 //   function solve(N,arr){
 
@@ -49,6 +50,7 @@
 
 
 
+
 //Stack Problem!
 // let N = 9;
 // let S = [];
@@ -58,10 +60,12 @@
 //     S.push(N);
 //   } else {
 //     console.log(S.pop());
-    
+
 //   }
 //   N = N - 1;
 // }
+
+
 
 
 
@@ -80,12 +84,13 @@
 //     {
 
 //         S2.push( S1.pop() );
-        
+
 //     }
 
 // }
 // console.log(S1.length);
 // console.log(S2.length);
+
 
 
 
@@ -108,4 +113,44 @@
 // while( !S2.length==0)
 // {
 //     console.log( S2.pop() );
+// }
+
+
+
+
+
+
+// let A = [2, 8, 4, 6, 5, 10];
+
+// let S = [];
+// let N = 6;
+
+// for (let i = N - 1; i >= 0; i--) {
+//   while (S.length > 0 && S[S.length - 1] < A[i]) {
+//     S.pop();
+//   }
+//   if (S.length > 0) {
+//     console.log(S[S.length - 1]);
+//   } else {
+//     console.log(-1);
+//   }
+//   S.push(A[i]);
+// }
+
+
+
+
+//Remove to Sort!
+// function removeToSort(arr,N)
+// {
+//   let S = [];
+//   S.push(arr[0]);
+//   for(let i=1; i<N; i++)
+//   {
+//     if(arr[i]>=S[S.length-1])
+//     {
+//       S.push(arr[i]);
+//     }
+//   }
+//   console.log(S.join(' '));
 // }
