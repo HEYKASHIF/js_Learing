@@ -154,3 +154,38 @@
 //   }
 //   console.log(S.join(' '));
 // }
+
+
+
+
+
+//Square Sorting!
+// function squareSorting(arr,N)
+// {
+//   let square = [];
+//   for(let i=0; i<N; i++)
+//   {
+//     square.push(arr[i]**2);
+//   }
+//   // console.log(square);
+//   for(let i=0; i<(N-1); i++)
+//   {
+//     for(let j=0; j<(N-i-1); j++)
+//     {
+//       if(square[j]>square[j+1])
+//       {
+//         let temp1 = square[j];
+//         square[j] = square[j+1];
+//         square[j+1] = temp1;
+        
+        
+//         let temp = arr[j];
+//         arr[j] = arr[j+1];
+//         arr[j+1] = temp;
+        
+//       }
+//     }
+//   }
+//   // console.log(square);
+//   console.log(arr.join(' '));
+// }

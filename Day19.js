@@ -141,3 +141,95 @@
 //   console.log(arr.slice(0,i+1).join(' '));
 //   // for(let )
 // }
+
+
+
+
+
+//Triplet Sum!
+// function tripletSum(arr,N)
+// {
+//   // console.log(arr);
+//   arr = arr.sort((a,b)=>a-b);
+//   // console.log(arr,N);
+//   let k=N-1;
+//   while(1<k)
+//   {
+//     let i=0;
+//     let j=k-1;
+//     while(i<j)
+//     {
+//       if(arr[i]+arr[j]==arr[k])
+//       {
+//         console.log(1);
+//         return;
+//       }
+//       else if(arr[i]+arr[j]>arr[k])
+//       {
+//         j--;
+//       }
+//       else
+//       {
+//         i++;
+//       }
+//     }
+//     k--;
+//   }
+//   console.log(0);
+// }
+
+
+
+
+
+//Again a classic Problem!
+function againAClassicalProblem(str)
+{
+  // console.log(str);
+  let Stack = [];
+  for(let i=0; i<str.length; i++)
+  {
+    if(str[i]=='(' || str[i]=='[' || str[i]=='{')
+    {
+      Stack.push(str[i]);
+    }
+    else
+    {
+      // console.log(str[i]);
+      
+      if(Stack.length==0)
+      {
+        console.log('not balanced');
+        return;
+      }
+      let temp = Stack.pop();
+      // console.log(temp)
+      if((temp=='(') && (str[i]!=')'))
+      {
+        console.log('not balanced');
+        return;
+      }
+      else if((temp=='[') && (str[i]!=']'))
+      {
+        console.log('not balanced');
+        return;
+      }
+      else if((temp=='{') && (str[i]!='}'))
+      {
+        console.log('not balanced');
+        return;
+      }
+    }
+  }
+  // console.log(Stack);
+  if(Stack.length==0)
+  {
+    console.log('balanced');
+    // return;
+  }
+  else
+  {
+    console.log('not balanced');
+    // return;
+  }
+}
