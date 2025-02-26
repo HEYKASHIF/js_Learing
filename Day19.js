@@ -265,3 +265,5 @@
 //     console.log(max);
 //     // write code here
 //   }
+
+// console.log(100%10);
