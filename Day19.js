@@ -183,53 +183,85 @@
 
 
 //Again a classic Problem!
-function againAClassicalProblem(str)
-{
-  // console.log(str);
-  let Stack = [];
-  for(let i=0; i<str.length; i++)
-  {
-    if(str[i]=='(' || str[i]=='[' || str[i]=='{')
-    {
-      Stack.push(str[i]);
-    }
-    else
-    {
-      // console.log(str[i]);
+// function againAClassicalProblem(str)
+// {
+//   // console.log(str);
+//   let Stack = [];
+//   for(let i=0; i<str.length; i++)
+//   {
+//     if(str[i]=='(' || str[i]=='[' || str[i]=='{')
+//     {
+//       Stack.push(str[i]);
+//     }
+//     else
+//     {
+//       // console.log(str[i]);
       
-      if(Stack.length==0)
-      {
-        console.log('not balanced');
-        return;
-      }
-      let temp = Stack.pop();
-      // console.log(temp)
-      if((temp=='(') && (str[i]!=')'))
-      {
-        console.log('not balanced');
-        return;
-      }
-      else if((temp=='[') && (str[i]!=']'))
-      {
-        console.log('not balanced');
-        return;
-      }
-      else if((temp=='{') && (str[i]!='}'))
-      {
-        console.log('not balanced');
-        return;
-      }
-    }
-  }
-  // console.log(Stack);
-  if(Stack.length==0)
-  {
-    console.log('balanced');
-    // return;
-  }
-  else
-  {
-    console.log('not balanced');
-    // return;
-  }
-}
+//       if(Stack.length==0)
+//       {
+//         console.log('not balanced');
+//         return;
+//       }
+//       let temp = Stack.pop();
+//       // console.log(temp)
+//       if((temp=='(') && (str[i]!=')'))
+//       {
+//         console.log('not balanced');
+//         return;
+//       }
+//       else if((temp=='[') && (str[i]!=']'))
+//       {
+//         console.log('not balanced');
+//         return;
+//       }
+//       else if((temp=='{') && (str[i]!='}'))
+//       {
+//         console.log('not balanced');
+//         return;
+//       }
+//     }
+//   }
+//   // console.log(Stack);
+//   if(Stack.length==0)
+//   {
+//     console.log('balanced');
+//     // return;
+//   }
+//   else
+//   {
+//     console.log('not balanced');
+//     // return;
+//   }
+// }
+
+
+
+
+
+
+//gifts!
+// function longestUniqueSubarray(gifts, n) {
+  
+  
+//     let obj = {};
+//     let i=0;
+//     let j=0;
+//     let max = 0;
+//     while(j<n)
+//     {
+//       if(!obj[gifts[j]])
+//       {
+//         max=Math.max(max,(j-i+1));
+//         obj[gifts[j]]=1;
+//         j++
+//       }
+//       else
+//       {
+//         obj[gifts[i]]=0;
+//         i++;
+        
+//       }
+//     }
+//     console.log(max);
+//     // write code here
+//   }
