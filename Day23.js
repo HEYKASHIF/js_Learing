@@ -208,4 +208,78 @@
 
 
 
+//Linked List Cycle!
+// const LinkedListNode = class {
+//     constructor(nodeData) {
+//         this.data = nodeData;
+//         this.next = null;
+//     }
+// };
+// // Complete the function below
+// var hasCycle = function(head) {
+  
+//   if(head==null)
+//   {
+//     return null;
+//   }
+//   let temp = head;
+//   let sett = new Set();
+  
+//   while(temp.next!=null)
+//   {
+//     if(sett.has(temp))
+//     {
+//       return true;
+//     }
+//     sett.add(temp);
+//     temp=temp.next;
+//   }
+//   return false;
+    
+// };
+
+
+
+
+
+//Nth Node From the End(two pointers approach)!
+// const LinkedListNode = class {
+//     constructor(nodeData) {
+//         this.data = nodeData;
+//         this.next = null;
+//     }
+// };
+
+// function nth_node(head,n){
+  
+//   if(head==null)
+//   {
+//     return null;
+//   }
+  
+//   let i=1;
+//   let start=head;
+//   let end=head;
+//   while(i<n)
+//   {
+//     if(end.next!=null)
+//     {
+//       end=end.next;
+//       i++;
+//     }
+//     else
+//     {
+//       return null;
+//     }
+//   }
+//   while(end.next!=null)
+//   {
+//     start=start.next;
+//     end=end.next;
+//   }
+//   return start.data;
+// }
+
+
+
 
