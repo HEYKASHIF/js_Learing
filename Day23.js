@@ -283,3 +283,88 @@
 
 
 
+
+
+//Reverse a LinkedList!
+// const LinkedListNode = class {
+//     constructor(nodeData) {
+//         this.data = nodeData;
+//         this.next = null;
+//     }
+// }
+
+// function reverse(head) {
+//   let temp = head;
+//   let prev = null;
+//   let next = null;
+//   while(temp!=null)
+//   {
+//     next=temp.next;
+//     temp.next=prev;
+//     prev=temp;
+//     temp=next;
+//   }
+//   head=prev;
+//   return head;
+// }
+
+
+
+
+
+
+//Add 1 to Linked List!
+// const LinkedListNode = class {
+//     constructor(nodeData) {
+//         this.data = nodeData;
+//         this.next = null;
+//     }
+// };
+
+// function reverseLinkedList(head)
+// {
+//   let temp = head;
+//   let prev = null;
+//   let next = null;
+//   while(temp!=null)
+//   {
+//     next=temp.next;
+//     temp.next=prev;
+//     prev=temp;
+//     temp=next;
+//   }
+//   head=prev;
+//   return head;
+// }
+
+// var addOneToLinkedList = function(head) {
+  
+//   if(head==null)
+//   {
+//     return null;
+//   }
+//   head = reverseLinkedList(head);
+//   let temp = head;
+//   let carry = 1;
+//   let sum=0;
+//   let prev;
+//   while(temp!=null)
+//   {
+//     sum=carry+temp.data;
+//     carry=(sum>=10)?1:0;
+//     sum=sum%10;
+//     temp.data=sum;
+//     prev=temp;
+//     temp=temp.next;
+//   }
+//   if(carry>0)
+//   {
+//     prev.next = new LinkedListNode(carry);
+//   }
+//   head = reverseLinkedList(head);
+//   return head;
+// };
+
+
+
+
