@@ -39,10 +39,10 @@
 
 
 
-//Convert To Binary!
+// Convert To Binary!
 // function convertToBinary(N)
 // {
-//     console.log(N);
+//     // console.log(N);
 //   let binary = '';
 //   while(N!=1)
 //   {
@@ -54,4 +54,46 @@
 //   return Number(binary);
 // }
 
-// convertToBinary(4);
+// convertToBinary(10);
+
+
+
+
+
+function f(x)
+{
+  if(x==0) return 0;
+  
+  return f(x-1)+x;
+}
+
+
+
+
+
+
+function f2(x)
+{
+  if(x==1)
+    {
+      // console.log('*');
+      return '*';
+
+    } 
+  console.log('*');
+  return f2(x-1);
+}
+// console.log(f2(4));
+
+
+
+
+
+//
+function f3(x)
+{
+  console.log('*')
+  f3(x-1);
+}
+f3(4);
+
