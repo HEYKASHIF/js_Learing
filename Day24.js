@@ -60,40 +60,40 @@
 
 
 
-function f(x)
-{
-  if(x==0) return 0;
+// function f(x)
+// {
+//   if(x==0) return 0;
   
-  return f(x-1)+x;
-}
+//   return f(x-1)+x;
+// }
 
 
 
 
 
 
-function f2(x)
-{
-  if(x==1)
-    {
-      // console.log('*');
-      return '*';
+// function f2(x)
+// {
+//   if(x==1)
+//     {
+//       // console.log('*');
+//       return '*';
 
-    } 
-  console.log('*');
-  return f2(x-1);
-}
-// console.log(f2(4));
-
-
+//     } 
+//   console.log('*');
+//   return f2(x-1);
+// }
+// // console.log(f2(4));
 
 
 
-//
-function f3(x)
-{
-  console.log('*')
-  f3(x-1);
-}
-f3(4);
+
+
+// //
+// function f3(x)
+// {
+//   console.log('*')
+//   f3(x-1);
+// }
+// f3(4);
 
