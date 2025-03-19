@@ -91,3 +91,74 @@
 //   }
 //   // Write code here
 // }
+
+
+
+
+
+//Power Function Impletation By Recursion!
+// function pfRecursion(a,b)
+// {
+//   if(b==0)
+//   {
+//     return 1;
+//   }
+//   else
+//   {
+//     return a*pfRecursion(a,b-1);
+//   }
+// }
+// function powerFunction(a,b)
+// {
+//   // console.log(a,b);
+//   let res = pfRecursion(a,b);
+//   console.log(res);
+// }
+// function runProgram(input) 
+//{
+//   let arr = input.split(" ").map(Number);
+//   let a = arr[0];
+//   let b = arr[1];
+//   powerFunction(a,b);
+//   // Write code here
+// }
+
+
+
+
+
+//Sum Of Array By Recursion!
+// function ebRecursion(n,arr)
+// {
+//   if(n==0)
+//   {
+//     return 0;
+//   }
+//   else
+//   {
+//     return arr[n-1]+ebRecursion(n-1,arr);
+//   }
+// }
+// function easyBut(n, arr)
+// {
+//   // console.log(n,arr);
+//   let res = ebRecursion(n,arr);
+//   console.log(res);
+// }
+// function runProgram(input) {
+//   let sInput = input.split("\n");
+//   let testCase = Number(sInput[0]);
+//   let line = 1;
+//   for(let i=0; i<testCase; i++)
+//   {
+//     let size = Number(sInput[line++]);
+//     let arr = sInput[line++].split(' ').map(Number);
+//     easyBut(size, arr);
+//   }
+//   // Write code here
+// }
+
+
+
+
+
