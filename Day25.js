@@ -293,3 +293,32 @@
 // }
 
 
+
+
+
+//Power Sum!
+// function recursivefun(X,N,value)
+// {
+  
+  
+//     let remaining = X-value**N;
+//     if(remaining==0) return 1;
+//     else if(remaining<0) return 0;
+//     return recursivefun(remaining,N,value+1)+recursivefun(X,N,value+1);
+
+// }
+// function PowerSum(X,N)
+// {
+//   // console.log(X,N);
+//   let value  = 1;
+//   let res = recursivefun(X,N,value);
+//   console.log(res);
+// }
+// function runProgram(input) 
+// {
+  
+//   let arr = input.split(' ').map(Number);
+//   let X = arr[0];
+//   let N = arr[1];
+//   PowerSum(X,N);
+// }
