@@ -197,3 +197,99 @@
 
 
 
+
+//GP & Recursion!
+// function rFunction(n,r)
+// {
+//   if(n==0)
+//   {
+//     return 1;
+//   }
+//   else
+//   {
+//     return (1/r**n)+(rFunction(n-1,r));
+//   }
+// }
+// function gpRecursion(n,r)
+// {
+//   let res = rFunction(n,r);
+//   console.log(res.toFixed(4));
+// }
+// function runProgram(input) {
+  
+//   let arr = input.split(' ').map(Number);
+//   let n = arr[0];
+//   let r = arr[1];
+//   gpRecursion(n,r);
+//   // Write code here
+// }
+
+
+
+
+
+//Number Of Ways 2!
+// function recursivefun(n)
+// {
+//   if(n==0)
+//   {
+//     return 1;
+//   }
+//   else if(n<0)
+//   {
+//     return 0;
+//   }
+//   else 
+//   {
+//     return recursivefun(n-1)+recursivefun(n-3)+recursivefun(n-5);
+//   }
+// }
+// function NumberOfWays(n)
+// {
+//   // console.log(n)
+//   let res = recursivefun(n);
+//   console.log(res);
+// }
+// function runProgram(input) 
+// {
+  
+//   let sInput = input.split('\n');
+//   let testCase = Number(sInput[0]);
+//   let line = 1;
+//   for(let i=0; i<testCase; i++)
+//   {
+//     let n = Number(sInput[line++]);
+//     NumberOfWays(n);
+//   }
+// }
+
+
+
+
+
+//Bob And Boxes!
+// function recursivefunc(N)
+// {
+//   if(N==0)
+//   {
+//     return 1;
+//   }
+//   else if(N<0)
+//   {
+//     return 0;
+//   }
+//   else 
+//   {
+//     return recursivefunc(N-1)+recursivefunc(N-3)+recursivefunc(N-5);
+//   }
+// }
+// function BobAndBoxes(N)
+// {
+//   let res = recursivefunc(N);
+//   console.log(res);
+// }
+// function runProgram(input) {
+//   BobAndBoxes(Number(input));
+// }
+
+
