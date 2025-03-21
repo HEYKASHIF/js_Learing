@@ -322,3 +322,79 @@
 //   let N = arr[1];
 //   PowerSum(X,N);
 // }
+
+
+
+
+
+//Recursive Bubble Sort!
+// function recursiveBubbleSort(n,arr)
+// {
+//   if(n==1)
+//   {
+//     return arr;
+//   }
+//   else
+//   {
+//     for(let i=0; i<n-1; i++)
+//     {
+//       if(arr[i]>arr[i+1])
+//       {
+//         let temp = arr[i];
+//         arr[i] = arr[i+1];
+//         arr[i+1] = temp;
+//       }
+//     }
+//     return recursiveBubbleSort(n-1,arr);
+//   }
+// }
+// function runProgram(input) 
+// {
+  
+//   let sInput = input.split('\n');
+//   let n = Number(sInput[0]);
+//   let arr = sInput[1].split(' ').map(Number);
+//   // console.log(n,arr);
+//   let arrNew = recursiveBubbleSort(n,arr);
+  
+//   console.log(arrNew.join(" "));
+//   // Write code here
+// }
+
+
+
+
+//Ways To Zero!
+// function waysToZero(N)
+// {
+//   // console.log(N);
+//   if(N==0)
+//   {
+//     return 1;
+//   }
+//   else if(N<0)
+//   {
+//     return 0;
+//   }
+//   else 
+//   {
+//     return waysToZero(N-1)+waysToZero(N-2)+waysToZero(N-5);
+//   }
+// }
+// function runProgram(input) 
+// {
+  
+//   let sInput = input.split('\n');
+//   let testCase = Number(sInput[0]);
+//   let line = 1;
+//   for(let i=0; i<testCase; i++)
+//   {
+//     let N = Number(sInput[line++]);
+//     // console.log(N);
+//     let result = waysToZero(N);
+//     console.log(result);
+//   }
+// }
+
+
+
