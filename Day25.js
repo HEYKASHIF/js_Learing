@@ -398,3 +398,40 @@
 
 
 
+
+
+
+
+//Mr. Robot Elliot Problem!
+// function robotElliot(start,end,str)
+// {
+//   // console.log(str);
+//   let m = Math.floor((start+end)/2);
+//   // console.log(str[m]);
+//   if(start==end)
+//   {
+//     return str[start];
+//   }
+//   else if(start>end)
+//   {
+//     return "";
+//   }
+//   else
+//   {
+//     return str[m]+robotElliot(start,m-1,str)+robotElliot(m+1,end,str);
+//   }
+// }
+// function runProgram(input) 
+// {
+  
+//   input = input.split('\n');
+//   let tc = Number(input[0]);
+//   let line = 1;
+//   for(let i=0; i<tc; i++)
+//   {
+//     let n = Number(input[line++]);
+//     let str = input[line++];
+//     let res = robotElliot(0,n-1,str);
+//     console.log(res);
+//   }
+// }
