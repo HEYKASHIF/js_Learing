@@ -46,32 +46,32 @@
 
 //****************************************** */
 //My approach of finding square root of a number!
-function sqrRoot(x) {
-  let i=1;
-  while(i*i<=x)
-  {
-    if(i*i==x)
-    {
-      console.log(i);
-      return ;
-    }
-    i++;
-  }
-  console.log(i-1);
-  return;
-// write your code here
-}
+// function sqrRoot(x) {
+//   let i=1;
+//   while(i*i<=x)
+//   {
+//     if(i*i==x)
+//     {
+//       console.log(i);
+//       return ;
+//     }
+//     i++;
+//   }
+//   console.log(i-1);
+//   return;
+// // write your code here
+// }
 
 //Venu Sir way of finding square root of a number!
-function sqrt(x)
-{
-  let i=1;
-  while(i*i<=x)
-  {
-    i++;
-  }
-  console.log(i-1);
-}
+// function sqrt(x)
+// {
+//   let i=1;
+//   while(i*i<=x)
+//   {
+//     i++;
+//   }
+//   console.log(i-1);
+// }
 //Venu Sir 2nd way of finding square root of a number!
 
 
@@ -239,28 +239,30 @@ function sqrt(x)
 
 
 
-//Discover Number!
+//Discover Number By Recursion+Binary Search!
 // function discoverNumber(k,low,high,arr)
 // {
 //   arr = arr.sort((a,b)=>a-b);
-//   let mid = low+Math.floor((high-low)/2);
-//   if(low>high)
+  
+//   while(low<=high)
 //   {
-//     return 'NO';
+//     let mid = low+Math.floor((high-low)/2);
+//     if(k==arr[mid])
+//     {
+//       return 'YES';
+//     }
+//     else if(k<arr[mid])
+//     {
+//       discoverNumber(k,low,mid-1,arr);
+//     }
+//     else
+//     {
+//       discoverNumber(k,mid+1,high,arr);
+//     }
 //   }
-//   else if(arr[mid]==k)
-//   {
-//     return 'YES';
-//   }
-//   else if(arr[mid]<k)
-//   {
-//     return discoverNumber(k,low,mid-1,arr);
-//   }
-//   else
-//   {
-//     return discoverNumber(k,mid+1,high,arr);
-//   }
+//   return 'NO';
 // }
+
 // function runProgram(input)
 // {
 //   input = input.split('\n');
@@ -272,6 +274,51 @@ function sqrt(x)
 //   {
 //     let k = Number(input[i+2]);
 //     let res = discoverNumber(k,0,n-1,arr);
+//     console.log(res);
+//   }
+// }
+
+
+
+
+
+
+
+//Discover A Number Through Binary Search!
+// function discoverNumber(k,n,arr)
+// {
+//   let low = 0;
+//   let high = n-1;
+//   arr = arr.sort((a,b)=>a-b);
+//   while(low<=high)
+//   {
+//     let mid = low+Math.floor((high-low)/2);
+//     if(k==arr[mid])
+//     {
+//       return 'YES';
+//     }
+//     else if(k<arr[mid])
+//     {
+//       high = mid-1;
+//     }
+//     else
+//     {
+//       low = mid+1;
+//     }
+//   }
+//   return 'NO';
+// }
+// function runProgram(input) 
+// {
+//   input = input.split('\n');
+//   let line1 = input[0].split(' ').map(Number);
+//   let n = line1[0];
+//   let QN = line1[1];
+//   let arr = input[1].split(' ').map(Number);
+//   for(let i=0; i<QN; i++)
+//   {
+//     let k = Number(input[i+2]);
+//     let res = discoverNumber(k,n,arr);
 //     console.log(res);
 //   }
 // }
