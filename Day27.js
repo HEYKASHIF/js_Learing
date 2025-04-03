@@ -295,4 +295,168 @@
 
 
 
-//
+//Number Of Occurence In LogN Time!
+// function lowerBound(k,n,arr)
+// {
+//   let low = 0;
+//   let high = n-1;
+//   let res = -1;
+//   while(low<=high)
+//   {
+//     let mid = low+Math.floor((high-low)/2);
+//     if(k==arr[mid])
+//     {
+//       res = mid;
+//       high = mid-1;
+//     }
+//     else if(k<arr[mid])
+//     {
+//       high = mid-1;
+//     }
+//     else
+//     {
+//       low = mid+1;
+//     }
+//   }
+//   return res;
+  
+// }
+// function upperBound(k,n,arr)
+// {
+//   let low = 0;
+//   let high = n-1;
+//   let res = -1;
+//   while(low<=high)
+//   {
+//     let mid = low+Math.floor((high-low)/2);
+//     if(k==arr[mid])
+//     {
+//       res = mid;
+//       low = mid+1;
+//     }
+//     else if(k<arr[mid])
+//     {
+//       high = mid-1;
+//     }
+//     else
+//     {
+//       low = mid+1;
+//     }
+//   }
+//   return res;
+// }
+// function numberOfOccurence(k,n,arr)
+// {
+//   let lB = lowerBound(k,n,arr);
+//   if(lB==-1)
+//   {
+//     return 0;
+//   }
+//   let uB = upperBound(k,n,arr);
+//   return (uB-lB)+1;
+// }
+// function runProgram(input) 
+// {
+//   input = input.split('\n');
+//   let line1 = input[0].split(' ').map(Number);
+//   let n = line1[0];
+//   let k = line1[1];
+//   let arr = input[1].split(' ').map(Number);
+//   let res = numberOfOccurence(k,n,arr);
+//   console.log(res);
+// }
+
+
+
+
+//Q4!
+function lower_bound(arr, target)
+{
+    let low = 0;
+    let high = arr.length;
+    while(low<=high)
+    {
+        let mid = (low + high)/2; // 2
+        if(arr[mid] < target)
+        {
+            low = mid + 1;
+        }
+        else
+        {
+            high = mid;
+        }
+    }
+    return low;        
+}
+let arr = [2, 3, 3, 5, 6, 8, 10]
+let target = 4
+console.log(lower_bound(arr, target));
+
+
+
+//Q5!
+// function upper_bound(arr, target)
+// {
+//     let low = 0;
+//     let  high = arr.length;
+//     while (low < high)
+//     {
+//         let mid = (low + high)/2; // 2
+//         if (arr[mid] <= target)
+//         {
+//             low = mid + 1;
+//         }
+//         else
+//         {
+//             high = mid;
+//         }
+//     }
+//     return low
+// }
+// let arr = [2, 3, 3, 5, 6, 8, 10];
+// let target = 3;
+// console.log(upper_bound(arr, target));
+
+
+
+
+
+
+
+
+function minInSortedAndRotated(n,k,arr){
+  
+    if(arr[0]<arr[n-1])
+    {
+      console.log(arr[0]);
+      return ;
+    }
+    if(arr[n-1]<arr[n-1])
+    {
+      console.log(arr[n-1]);
+      return ;
+    }
+    let low = 1;
+    let high = n-2;
+    while(low<=high)
+    {
+      let mid = low+Math.floor((high-low)/2);
+      if(arr[mid]<arr[mid-1] && arr[mid]<arr[mid+1])
+      {
+        console.log(arr[mid]);
+        return ;
+      }
+      else if(arr[mid]>arr[mid+1])
+      {
+        low = mid+1;
+      }
+      else
+      {
+        high = mid-1;
+      }
+    }
+  
+  // write your code here
+  }
+  
+  
