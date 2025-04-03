@@ -423,40 +423,105 @@ console.log(lower_bound(arr, target));
 
 
 
-
-function minInSortedAndRotated(n,k,arr){
+//*********************************************
+// function minInSortedAndRotated(n,k,arr){
   
-    if(arr[0]<arr[n-1])
-    {
-      console.log(arr[0]);
-      return ;
-    }
-    if(arr[n-1]<arr[n-1])
-    {
-      console.log(arr[n-1]);
-      return ;
-    }
-    let low = 1;
-    let high = n-2;
+//     if(arr[0]<arr[n-1])
+//     {
+//       console.log(arr[0]);
+//       return ;
+//     }
+//     if(arr[n-1]<arr[n-1])
+//     {
+//       console.log(arr[n-1]);
+//       return ;
+//     }
+//     let low = 1;
+//     let high = n-2;
+//     while(low<=high)
+//     {
+//       let mid = low+Math.floor((high-low)/2);
+//       if(arr[mid]<arr[mid-1] && arr[mid]<arr[mid+1])
+//       {
+//         console.log(arr[mid]);
+//         return ;
+//       }
+//       else if(arr[mid]>arr[mid+1])
+//       {
+//         low = mid+1;
+//       }
+//       else
+//       {
+//         high = mid-1;
+//       }
+//     }
+  
+//   // write your code here
+//   }
+  
+//**************************************************
+function searchInSortedAndRotated(n,k,arr){
+  
+    let low = 0;
+    let high = n-1;
     while(low<=high)
     {
       let mid = low+Math.floor((high-low)/2);
-      if(arr[mid]<arr[mid-1] && arr[mid]<arr[mid+1])
+      if(k==arr[mid])
       {
-        console.log(arr[mid]);
+        console.log(mid);
         return ;
       }
-      else if(arr[mid]>arr[mid+1])
-      {
-        low = mid+1;
-      }
-      else
+      else if(arr[low]<arr[mid] && (arr[low]<k && k<arr[mid]))
       {
         high = mid-1;
       }
+      else
+      {
+        low = mid+1;
+      }
     }
+    console.log(-1);
+  //write your code here    
+  }
+
+
+
+
+
+
+
+  function findingPeak(n,mountainHeights){
   
+    let arr = mountainHeights;
+    if(n==1)
+    {
+      console.log(0)
+      return ;
+    }
+    let low = 0;
+    let high = n-1;
+    let res = -1;
+    while(low<=high)
+    {
+      let mid = low+Math.floor((high-low)/2);
+      if(arr[mid]>arr[(mid-1)%n] && arr[mid]>arr[(mid+1)%n])
+      {
+        console.log(mid);
+        return ;
+      }
+      else if(arr[mid]<arr[(mid-1)%n])
+      {
+        high = mid-1;
+      }
+      else
+      {
+        low = mid+1;
+      }
+      
+    }
+    console.log(-1);
+    return;
   // write your code here
   }
-  
   
