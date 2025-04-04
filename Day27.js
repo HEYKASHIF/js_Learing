@@ -370,27 +370,27 @@
 
 
 //Q4!
-function lower_bound(arr, target)
-{
-    let low = 0;
-    let high = arr.length;
-    while(low<=high)
-    {
-        let mid = (low + high)/2; // 2
-        if(arr[mid] < target)
-        {
-            low = mid + 1;
-        }
-        else
-        {
-            high = mid;
-        }
-    }
-    return low;        
-}
-let arr = [2, 3, 3, 5, 6, 8, 10]
-let target = 4
-console.log(lower_bound(arr, target));
+// function lower_bound(arr, target)
+// {
+//     let low = 0;
+//     let high = arr.length;
+//     while(low<=high)
+//     {
+//         let mid = (low + high)/2; // 2
+//         if(arr[mid] < target)
+//         {
+//             low = mid + 1;
+//         }
+//         else
+//         {
+//             high = mid;
+//         }
+//     }
+//     return low;        
+// }
+// let arr = [2, 3, 3, 5, 6, 8, 10]
+// let target = 4
+// console.log(lower_bound(arr, target));
 
 
 
@@ -491,37 +491,102 @@ function searchInSortedAndRotated(n,k,arr){
 
 
 
-  function findingPeak(n,mountainHeights){
+//   function findingPeak(n,mountainHeights){
   
-    let arr = mountainHeights;
-    if(n==1)
-    {
-      console.log(0)
-      return ;
-    }
-    let low = 0;
-    let high = n-1;
-    let res = -1;
-    while(low<=high)
-    {
-      let mid = low+Math.floor((high-low)/2);
-      if(arr[mid]>arr[(mid-1)%n] && arr[mid]>arr[(mid+1)%n])
-      {
-        console.log(mid);
-        return ;
-      }
-      else if(arr[mid]<arr[(mid-1)%n])
-      {
-        high = mid-1;
-      }
-      else
-      {
-        low = mid+1;
-      }
+//     let arr = mountainHeights;
+//     if(n==1)
+//     {
+//       console.log(0)
+//       return ;
+//     }
+//     let low = 0;
+//     let high = n-1;
+//     let res = -1;
+//     while(low<=high)
+//     {
+//       let mid = low+Math.floor((high-low)/2);
+//       if(arr[mid]>arr[(mid-1)%n] && arr[mid]>arr[(mid+1)%n])
+//       {
+//         console.log(mid);
+//         return ;
+//       }
+//       else if(arr[mid]<arr[(mid-1)%n])
+//       {
+//         high = mid-1;
+//       }
+//       else
+//       {
+//         low = mid+1;
+//       }
       
-    }
-    console.log(-1);
-    return;
+//     }
+//     console.log(-1);
+//     return;
   // write your code here
-  }
+//   }
   
+
+
+  /*
+  function minimumInSortedAndRotated(n,arr)
+{
+  
+  let low = 0;
+  let high = n-1;
+  while(low<=high)
+  {
+    let mid = low+Math.floor((high-low)/2);
+    if(arr[low]<=arr[mid] && arr[mid]<=arr[high])
+    {
+      return arr[low];
+    }
+    if(arr[mid]<=arr[(mid-1)%n] && arr[mid]<=arr[(mid+1)%n])
+    {
+      return arr[mid];
+    }
+    if(arr[low]<=arr[mid])
+    {
+      low = mid+1;
+    }
+    else
+    {
+      high = mid-1;
+    }
+  }
+  return -1;
+  // console.log(n,arr);
+}
+  */ 
+
+
+
+
+/*
+function minimumInSortedAndRotated(n, arr) {
+    let low = 0;
+    let high = n - 1;
+    
+    while (low < high) {
+        let mid = low + Math.floor((high - low) / 2);
+
+        // If the array is already sorted, return the first element
+        if (arr[low] <= arr[high]) {
+            return arr[low];
+        }
+
+        // Check if mid is the minimum element
+        if (mid > 0 && arr[mid] < arr[mid - 1]) {
+            return arr[mid];
+        }
+
+        // If the left part is sorted, the minimum is in the right part
+        if (arr[low] <= arr[mid]) {
+            low = mid + 1;
+        } else {
+            high = mid; // mid itself can be the minimum
+        }
+    }
+    
+    return arr[low]; // At the end, low will point to the minimum element
+}
+*/
