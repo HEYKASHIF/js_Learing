@@ -123,3 +123,66 @@
 //   let res = machinesAtWork(targetItems,n,machinesArray);
 //   console.log(res);
 // }
+
+
+
+
+
+
+
+//Casino And The Dealer!
+// function casinoAndTheDealer(k,m,n,tArray)
+// {
+//   let low = 1;
+//   let high = Math.max(...tArray);
+//   let res = -1;
+  
+//   while(low<=high)
+//   {
+//     let count = 0;
+//     let deck = 0;
+//     let mid = low+Math.floor((high-low)/2);
+//     for(let i=0; i<n; i++)
+//     {
+//       if(tArray[i]<=mid)
+//       {
+//         count++;
+//         if(count==k)
+//         {
+//           deck++;
+//           count = 0;
+//         }
+//       }
+//       else
+//       {
+//         count = 0;
+//       }
+//     }
+//     if(deck>=m)
+//     {
+//       res = mid;
+//       high = mid-1;
+//     }
+//     else
+//     {
+//       low = mid+1;
+//     }
+//   }
+//   return res;
+// }
+// function runProgram(input)
+// {
+//   input = input.split('\n');
+//   let tc = +input[0];
+//   let line = 1;
+//   for(let i=0; i<tc; i++)
+//   {
+//     let line1 = input[line++].split(' ').map(Number);
+//     let n = line1[0];
+//     let m = line1[1];
+//     let k = line1[2];
+//     let tArray = input[line++].split(' ').map(Number);
+//     let res = casinoAndTheDealer(k,m,n,tArray);
+//     console.log(res);
+//   }
+// }
