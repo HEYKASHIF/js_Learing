@@ -186,3 +186,77 @@
 //     console.log(res);
 //   }
 // }
+
+
+
+// function sum(a,b)
+// {
+//     return a+b;
+// }
+
+// let summ = function (a,b)
+// {
+//     return a+b;
+// }
+
+// let arr = [1,2,3,4,5];
+
+// let sumarr = (arr)=>{
+//     let sum = 0;
+//     for(let i=0; i<arr.length; i++)
+//     {
+//         sum+=arr[i];
+//     }
+//     return sum;
+// }
+
+// let greetings = (fName, lName)=>`Hey ${fName}, ${lName} Welcome`
+
+// let user = {
+//     userName: "Bheem",
+//     userDesignation: "Manager",
+//     skills: {
+//         softSkills:['communication','leaderships'],
+//         techSkills:['js','react','Node.js']
+//     }
+// }
+
+// let {userDesignation, skills, softSkills} = user;
+// console.log(userDesignation);
+
+// let a=10;
+// let b=20;
+// [a,b]=[b,a];
+// console.log(a,b);
+
+// let arr1 = [1,2,3,4,5];
+// let arr2 = [11,22,33,44,55];
+// let fin = [...arr1,...arr2];
+// console.log(fin);
+
+// const multiply = (a, b) => {
+//     return a * b;
+//   }
+//   console.log(multiply(2));
+
+// //   const { name, age } = null;
+
+//   const add = (a, b = 5) => a + b;
+// console.log(add(10));
+
+
+
+//Problem Statement:-
+//Write an arrow function that takes a number as input and returns 
+// both its square and cube in an object, using implicit return. 
+// The function should be as concise as possible.
+//Requirements:-
+// The arrow function should use implicit return (no curly braces or return keyword).
+// The function should return an object in the format { square, cube }.
+//Example Input:
+//5
+//Example Output:
+//{ square: 25, cube: 125 }
+
+let sumSquare = (number) => ({Square: number*number, cube: number*number*number})
+console.log(sumSquare(50));
