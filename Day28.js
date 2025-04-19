@@ -258,5 +258,31 @@
 //Example Output:
 //{ square: 25, cube: 125 }
 
-let sumSquare = (number) => ({Square: number*number, cube: number*number*number})
-console.log(sumSquare(50));
+// let sumSquare = (number) => ({Square: number*number, cube: number*number*number})
+// console.log(sumSquare(50));
+// function counter()
+// {
+//     let count = 0;
+//     function childCount()
+//     {
+//         count++;
+//         return count;
+//     }
+//     return childCount;
+// }
+
+// console.log(counter()())
+
+
+// let arr = ['apple', 'banana', 'kiwi', 'guava'];
+
+// function searchfruit(fruit)
+// {
+//     let res = arr.filter((ele)=>{
+//         return ele === fruit;
+
+//     })
+//     console.log(res);
+// }
+
+// searchfruit('apple');
