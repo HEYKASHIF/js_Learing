@@ -1,1 +1,1 @@
-console.log(arr[i]);
+0

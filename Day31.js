@@ -9,6 +9,16 @@
 //   console.log(closure());
   
 
+
+
+
+
+
+
+
+
+
+
 // function counter() {
 //     let count = 0;
 //     return function() {
@@ -19,6 +29,14 @@
 //   c();
 //   c();
 //   console.log(count);
+
+
+
+
+
+
+
+
 
 
 
@@ -37,8 +55,20 @@
 
 
 
+
+
+
+
+
+
 // let myVar = "Not hoisted";
 // console.log(myVar);
+
+
+
+
+
+
 
 
 
@@ -59,6 +89,11 @@
 
 
 
+
+
+
+
+
 // function multiply(x) {
 //   return function(y) {
 //     return x * y;
@@ -68,18 +103,26 @@
 // console.log(multiplyBy2(5));
 
 
-function outerFunction()
-{
-  let message = 'hello sweetie!';
-  return function innerFunction()
-  {
-    console.log(message);
-  }
-}
 
-let variableFunction = outerFunction();
 
-variableFunction();   
+
+
+
+
+
+
+// function outerFunction()
+// {
+//   let message = 'hello sweetie!';
+//   return function innerFunction()
+//   {
+//     console.log(message);
+//   }
+// }
+
+// let variableFunction = outerFunction();
+
+// variableFunction();   
 
 
 
