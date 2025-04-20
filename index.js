@@ -38,3 +38,12 @@
 // console.log(36%36);
 // let str = 'AmanZ';
 // console.log(str.charCodeAt(4));
+
+
+// main.js
+// import { greet, add } from './utils.js';
+// import log from './logger.js';
+
+// console.log(greet('Veer Bhai')); // Hello, Veer Bhai!
+// console.log(add(2, 3));          // 5
+// log("This is a log message.");
